@@ -2,7 +2,7 @@
 
 ## Programando o ESP-01 com a Interface USB-Serial do Arduino UNO
 
-Recentemente, há um bom tempo atrás adquiri alguns módulos relés com ESP-01 e uns móduos ESP01S que ficaram parados e resolvi colocá-los em uso. O problema é que esses módulos não possuem suporte nativo para comunicação direta com USB, diferente de um arduino UNO ou um Esp32 que possuem circuitos dedicados para comunicação USB,  o que dificulta a gravação de novos códigos. Para resolver isso, adquiri um conversor específico para esses módulos, mas logo começaram os problemas: o módulo não conectava de jeito nenhum! Atualizei drives, fiz as configurações iniciais, mas sem sucesso parti para o esquemático da  placa e o chip central estava sem identificação, pelo formato um CH340, mas as pinagens não batiam, noo gerenciador de dispositivos também não... Parti então para outra abordagem:
+Há um bom tempo atrás adquiri alguns módulos relés com ESP-01 e uns móduos ESP01S que ficaram parados e resolvi colocá-los em uso. O problema é que esses módulos não possuem suporte nativo para comunicação direta com USB, diferente de um arduino UNO ou um Esp32 que possuem circuitos dedicados para comunicação USB,  o que dificulta a gravação de novos códigos. Para resolver isso, adquiri um conversor específico para esses módulos, mas logo começaram os problemas: o módulo não conectava de jeito nenhum! Atualizei drives, fiz as configurações iniciais, mas sem sucesso parti para o esquemático da  placa e o chip central estava sem identificação, pelo formato um CH340, mas as pinagens não batiam, noo gerenciador de dispositivos também não... Parti então para outra abordagem:
 
 
 **⚠️ Observações importantes:**
