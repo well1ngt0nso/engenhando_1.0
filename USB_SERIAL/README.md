@@ -6,7 +6,7 @@ Há um bom tempo atrás adquiri alguns módulos relés com ESP-01 e uns móduos 
 
 
 **⚠️ Observações importantes:**
-Este método é funcional apenas para fazer o upload de novos códigos.
+Este método é funcional apenas para fazer o upload de novos códigos. 
 Em alguns casos, a comunicação do monitor serial pode não funcionar corretamente após a gravação, mas já encontrei outra solução para isso — funciona bem e compartilho os detalhes mais abaixo.
 
 ## Com Arduino:
