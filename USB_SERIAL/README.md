@@ -10,19 +10,19 @@ Este método é funcional apenas para fazer o upload de novos códigos.
 Em alguns casos, a comunicação do monitor serial pode não funcionar corretamente após a gravação, mas já encontrei outra solução para isso — funciona bem e compartilho os detalhes mais abaixo.
 
 ## Com Arduino:
-<img src ="https://github.com/user-attachments/assets/f6aec310-41b1-4085-bf3b-00b0a0cb9f98">
+<img src ="https://github.com/well1ngt0nso/engenhando_1.0/blob/main/USB_SERIAL/Sem%20t%C3%ADtulo-2_Prancheta%201_Prancheta%201_Prancheta%201-01-01.jpg">
 
 Esquemático:
 
-<img src ="https://github.com/user-attachments/assets/5f4c624a-6ea5-49d1-9d58-c3d4163e6f6a">
+<img src ="https://github.com/well1ngt0nso/engenhando_1.0/blob/main/USB_SERIAL/esquem%C3%A1tico-01.jpg">
 
 
 **Etapas**
 - Certifiquece de que não tem nenhum monitor serial aberto
 - FAÇA TODA A MONTAGEM COM O ARDUINO DESCONECTADO DA USB
 - ENABLE ESP01 -> 3.3V
-- Inicie o Arduino na USB como GPIO0 do ESP01 em 3.3V, isso diz para o chip entrar em modo de gravação na flash, faça o uploud. Mantenha lá até que tudo tenha sido enviado (pode ficar aparecendo umas mensagens de erro na USB, ignore, o importante é que a placa apareça na COM0/1/2/3....)
-- Retire o GPIO0 do 3.3V e faça um reset; RST ESP01-> GND (Toque rápido) 
+- Inicie o Arduino na USB como GPIO0 do ESP01 em GND, isso diz para o chip entrar em modo de gravação na flash, faça o uploud. Mantenha lá até que tudo tenha sido enviado (pode ficar aparecendo umas mensagens de erro na USB, ignore, o importante é que a placa apareça na COM0/1/2/3....)
+- Retire o GPIO0 do GND e faça um reset; RST ESP01-> GND (Toque rápido) 
 
 As duas dúvidas que podem surgir é: 
 
@@ -43,8 +43,11 @@ Para tirar essa dúvida descidi fazer algo "final", peguei o conversor que não 
 
   Embora possa quebrar um galho, trabalhar sem o monitor pode ser muito ruim, um vez que você não tem feedback, debugar o código nem se fala, em vários momentos aparecia a mensagem de sucesso no uploud, mas o código ainda era o mesmo... Estava trabalhando por wifi e o quão bom é poder ir até o monitor serial e ver o IP que a rede setou, simples e rápido.
 
-A lógica é a mesma, mas agora vamos utilizar uma placa de dessenvolvimento que tenha chip serial e que o microcontrolador ja trabalhe em 3.3V, escolhi um ESP32, como a UART dele já trabalha no mesmo range do ESP1/ESP01S, o chip serial já entenderá o ESP01/ESP01S. Essa foi minha dúvida e ao conectar deu certo.
+A lógica é a mesma, mas agora vamos utilizar uma placa de dessenvolvimento que tenha chip serial e que o microcontrolador ja trabalhe em 3.3V, escolhi um ESP32, como a UART dele já trabalha no mesmo range do ESP01/ESP01S, o chip serial já entenderá o ESP01/ESP01S. Essa foi minha dúvida e ao conectar deu certo.
 
 **⚠️OBS**
 
-Para manter o chip do ESP32 desligado, conecte EN (Enable) em GND
+- Para manter o chip do ESP32 desligado, conecte EN (Enable) em GND
+- Verifique atentamente as conexões, pois tive muito problema com protoboards com pinos ruins e também por não seguir as sequências que detalhei 
+
+Em breve o link do vídeo sobre >>aqui<<
