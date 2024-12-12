@@ -50,4 +50,4 @@ A lógica é a mesma, mas agora vamos utilizar uma placa de dessenvolvimento que
 - Para manter o chip do ESP32 desligado, conecte EN (Enable) em GND
 - Verifique atentamente as conexões, pois tive muito problema com protoboards com pinos ruins e também por não seguir as sequências que detalhei 
 
-Em breve o link do vídeo sobre >>aqui<<
+Em breve o link do vídeo sobre >>[aqui](https://youtu.be/WLhsem-cJ9I)<<
